@@ -1,0 +1,144 @@
+.course .lesson {
+    border-radius: 10px;
+    border: 3px solid rgb(35, 159, 231);
+    border-width: 3px 0.5px 0.5px 0.5px;
+    border-color: rgb(35, 159, 231) #80808073 #80808073 #80808073;
+}
+
+.course .icon-of-lesson {
+    width: 35px;
+    padding: 10px;
+    background: #80808030;
+    border-radius: 10px;
+}
+
+.course .btn-tick {
+    height: fit-content;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 0px #b7b2b273;
+    background: transparent;
+}
+
+.course .complete {
+    background: #42aa40 !important;
+    color: white;
+}
+
+.course .btn-tick:hover {
+    box-shadow: 0 4px 5px 3px #645e5e73;
+}
+
+.course .title-of-lesson {
+    font-size: 17px;
+    color: #ea965a;
+}
+
+.course .title-of-lesson:hover {
+    text-decoration: underline;
+}
+
+.course hr {
+    height: 1px;
+    background: #80808038;
+    border: none;
+}
+
+.course .icon-donation {
+    width: 25px;
+}
+
+.course .btn-donation {
+    font-weight: 600;
+    color: #e07631;
+}
+
+.course .cover>div>img:first-child, .course .cover>div>div {
+    height: 125px;
+    width: 125px;
+    object-fit: cover;
+    padding: 5px;
+    background: #80808026;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 2px #e4e4e4;
+    transition: all 0.3s;
+}
+
+.course .cover>div>div:hover, .course .cover>div>img:first-child:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.course label {
+    color: #414141;
+    font-weight: 550;
+    font-size: 17px;
+}
+
+.course form>div>button {
+    width: 150px;
+    font-size: 17px;
+}
+
+.course form>div>button:hover {
+    box-shadow: 6px 6px 6px 1px #ababab;
+    font-weight: 600;
+    text-shadow: 3px 3px #797979e8;
+}
+
+.course .ele-list ul {
+    box-shadow: 0 6px 5px 2px #e2e2e2;
+    border-radius: 0px 0px 5px 5px;
+    height: 100px;
+    overflow: auto;
+}
+
+.course .ele-list li input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.course .ele-list li:hover {
+    background: #e0e0e099;
+}
+
+.course .ele-list li>img {
+    visibility: hidden;
+}
+.course .ele-list li:hover>img {
+    visibility: inherit;
+}
+
+.course .session {
+    width: 50px;
+}
+
+.course .create-peo {
+    transform: rotate(0deg);
+    transition: all 0.3s;
+}
+
+.course .create-peo:hover {
+    scale: 1.2;
+    transform: rotate(135deg);
+}
+
+.course .approval {
+    position: relative;
+}
+.course .approval::before {
+    content: attr(data-count);
+    position: absolute;
+    top: -0.75em;
+    right: -0.75em;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+}

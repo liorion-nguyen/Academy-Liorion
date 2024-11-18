@@ -1,0 +1,80 @@
+body {
+  padding: 20px;
+}
+h2 {
+  text-align: center;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.form {
+  display: flex;
+  width: 100%;
+}
+.form div:nth-child(1) {
+  padding-right: 10px;
+  width: 100%;
+}
+.form div:nth-child(2) {
+  padding-left: 10px;
+  width: 100%;
+}
+form div:nth-child(4) {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  align-items: center;
+}
+form div:nth-child(4) div {
+  height: 100%;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+}
+form div:nth-child(4) div input {
+  margin-bottom: 0px;
+}
+form div:nth-child(4) select {
+  display: flex;
+  padding-right: 10px;
+  width: 100px;
+  margin-bottom: 0px;
+}

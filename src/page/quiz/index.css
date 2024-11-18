@@ -1,0 +1,199 @@
+.quiz .form {
+    width: 900px;
+    box-shadow: 0 0 5px 4px #c9c9c9;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.quiz {
+    margin-top: 180px;
+}
+
+#txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-family: sans-serif;
+    letter-spacing: 3.5px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    position: relative;
+}
+
+#txt>b {
+    height: 3.5rem;
+    box-shadow: 0 .4rem .3rem -.3rem #aaa;
+    color: #979c9f;
+    background: linear-gradient(#aaf, #acf, #afc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.quiz .btn-question-number {
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(#d4d69c, #577871, #aaffd1);
+}
+
+.quiz .btn-question-number p {
+    color: white;
+}
+
+.quiz .question {
+    font-size: 18px;
+    color: #332b2b;
+}
+
+.quiz .answer {
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background: #cccccc69;
+    font-size: 16px;
+    color: #454343;
+}
+
+.quiz .submit {
+    padding: 15px 20px;
+    color: white;
+    background: #0aa10ae6;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0;
+    width: 200px;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 3px #7a2020;
+}
+
+.quiz .content-question {
+    outline: none;
+    border: none;
+    font-size: 16px;
+    flex: 1;
+}
+.imgQuestion {
+    width: 150px;
+}
+#countdown{
+	width: 265px;
+    height: 112px;
+    text-align: center;
+    background: #222;
+    background-image: -webkit-linear-gradient(top, #222, #333, #333, #222);
+    background-image: -moz-linear-gradient(top, #222, #333, #333, #222);
+    background-image: -ms-linear-gradient(top, #222, #333, #333, #222);
+    background-image: -o-linear-gradient(top, #222, #333, #333, #222);
+    border: 1px solid #111;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+    margin: auto;
+    padding: 24px 0;
+    position: absolute;
+    top: 60px;
+    scale: 0.5;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#countdown:before{
+	content:"";
+	width: 8px;
+	height: 65px;
+	background: #444;
+	background-image: -webkit-linear-gradient(top, #555, #444, #444, #555); 
+	background-image:    -moz-linear-gradient(top, #555, #444, #444, #555);
+	background-image:     -ms-linear-gradient(top, #555, #444, #444, #555);
+	background-image:      -o-linear-gradient(top, #555, #444, #444, #555);
+	border: 1px solid #111;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	display: block;
+	position: absolute;
+	top: 48px; left: -10px;
+}
+
+#countdown:after{
+	content:"";
+	width: 8px;
+	height: 65px;
+	background: #444;
+	background-image: -webkit-linear-gradient(top, #555, #444, #444, #555); 
+	background-image:    -moz-linear-gradient(top, #555, #444, #444, #555);
+	background-image:     -ms-linear-gradient(top, #555, #444, #444, #555);
+	background-image:      -o-linear-gradient(top, #555, #444, #444, #555);
+	border: 1px solid #111;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	display: block;
+	position: absolute;
+	top: 48px; right: -10px;
+}
+
+#countdown #tiles{
+	position: relative;
+	z-index: 1;
+}
+
+#countdown #tiles > span{
+	width: 92px;
+	max-width: 92px;
+	font: bold 48px 'Droid Sans', Arial, sans-serif;
+	text-align: center;
+	color: #111;
+	background-color: #ddd;
+	background-image: -webkit-linear-gradient(top, #bbb, #eee); 
+	background-image:    -moz-linear-gradient(top, #bbb, #eee);
+	background-image:     -ms-linear-gradient(top, #bbb, #eee);
+	background-image:      -o-linear-gradient(top, #bbb, #eee);
+	border-top: 1px solid #fff;
+	border-radius: 3px;
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.7);
+	margin: 0 7px;
+	padding: 18px 0;
+	display: inline-block;
+	position: relative;
+}
+
+#countdown #tiles > span:before{
+	content:"";
+	width: 100%;
+	height: 13px;
+	background: #111;
+	display: block;
+	padding: 0 3px;
+	position: absolute;
+	top: 41%; left: -3px;
+	z-index: -1;
+}
+
+#countdown #tiles > span:after{
+	content:"";
+	width: 100%;
+	height: 1px;
+	background: #eee;
+	border-top: 1px solid #333;
+	display: block;
+	position: absolute;
+	top: 48%; left: 0;
+}
+
+#countdown .labels{
+	width: 100%;
+	height: 25px;
+	text-align: center;
+	position: absolute;
+	bottom: 8px;
+}
+
+#countdown .labels li{
+	width: 102px;
+	font: bold 15px 'Droid Sans', Arial, sans-serif;
+	color: #f47321;
+	text-shadow: 1px 1px 0px #000;
+	text-align: center;
+	text-transform: uppercase;
+	display: inline-block;
+}

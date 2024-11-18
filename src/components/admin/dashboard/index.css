@@ -1,0 +1,57 @@
+body {
+  padding: 20px;
+}
+.item:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+.item:first-child > div {
+  font-size: 32px;
+}
+
+.item:first-child > div > a {
+  color: #fff;
+  background-color: #4e73df;
+  border-color: #4e73df;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.item:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item:nth-child(2) > div {
+  width: 50%;
+  margin-top: 20px;
+}
+.item:nth-child(2) > div > div {
+  display: flex;
+  justify-content: space-between;
+  border-left: 0.25rem solid #4e73df !important;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.item:nth-child(2) > div > div > p {
+  color: #4e73df !important;
+  font-size: 24px;
+}
+.item:nth-child(2) > div > div {
+  display: flex;
+  align-items: center;
+}
+.item:nth-child(2) > div:nth-child(odd) > div {
+  margin-right: 10px;
+}
+.item:nth-child(2) > div:nth-child(even) > div {
+  margin-left: 10px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
